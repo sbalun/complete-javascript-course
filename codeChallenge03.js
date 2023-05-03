@@ -12,11 +12,11 @@ let averageScoreKoalas = testDataKoalas03 / 3;
 console.log("averageScoreKoalas: " + averageScoreKoalas)
 
 if(averageScoreDolphins > averageScoreKoalas && averageScoreDolphins >= 100){
-    console.log("Dolphin's win");
+    console.log("Dolphin's win 🐬");
 } else if (averageScoreKoalas > averageScoreDolphins && averageScoreKoalas >= 100){
-    console.log("Koala's win");
+    console.log("Koala's win 🐨");
 } else if (averageScoreKoalas === averageScoreDolphins && averageScoreKoalas >= 100 && averageScoreDolphins >= 100){
     console.log("It's a tie!");
 } else{
-    console.log("Nobody scored enough points to be declared a winner")
+    console.log("Nobody scored enough points to be declared a winner 😀")
 }
