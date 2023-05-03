@@ -12,9 +12,9 @@ let averageScoreKoalas = testDataKoalas03 / 3;
 console.log("averageScoreKoalas: " + averageScoreKoalas)
 
 if(averageScoreDolphins > averageScoreKoalas && averageScoreDolphins >= 100){
-    console.log("Dolphin's win 🐬");
+    console.log("The Dolphin's win 🐬");
 } else if (averageScoreKoalas > averageScoreDolphins && averageScoreKoalas >= 100){
-    console.log("Koala's win 🐨");
+    console.log("The Koala's win 🐨");
 } else if (averageScoreKoalas === averageScoreDolphins && averageScoreKoalas >= 100 && averageScoreDolphins >= 100){
     console.log("It's a tie!");
 } else{
