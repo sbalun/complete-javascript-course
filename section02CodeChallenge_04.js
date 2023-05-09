@@ -20,7 +20,12 @@ Your tasks:
         - Value X is between 50 and 300, if it's>= 50 && <= 300
  */
 
-const billValue = 100.00;
-let tip = billValue * .15;
-let totalValue = billValue + tip;
-console.log(`The bill was ${billValue}, the tip was ${tip}, and the total value ${totalValue}`)
+const billValue = 300.00;
+let tipAmount;
+if(billValue >= 50 && billValue <= 300){
+    tipAmount = .15;
+} else if(billValue < 50 || billValue > 300.00) {
+    tipAmount = .20;
+}
+let totalValue = billValue + (tipAmount * billValue);
+console.log(`The bill was ${billValue}, the tip was ${tipAmount * billValue}, and the total value was ${totalValue}`)
