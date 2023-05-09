@@ -25,9 +25,9 @@ console.log(avgDolphins, avgKoalas);
 function checkWinner(teamOneAvg, teamTwoAvg){
     let winner;
 
-    if(teamOneAvg > teamTwoAvg * 2){
+    if(teamOneAvg >= teamTwoAvg * 2){
         winner = `Dolphins win (${teamOneAvg} vs. ${teamTwoAvg})`;
-    }else if(teamTwoAvg > teamOneAvg * 2){
+    }else if(teamTwoAvg >= teamOneAvg * 2){
         winner = `Koalas win (${teamTwoAvg} vs. ${teamOneAvg})`;
     }else{
         winner = "It's a tie!";
