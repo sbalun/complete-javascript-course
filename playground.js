@@ -44,6 +44,40 @@ console.log(fruitProcessor(4,5));
 */
 
 /*--------------------------------/
-       Reviewing Functions
+ Looping Array, Break and Continue
 /--------------------------------*/
 
+/*const scottArray = [
+    'Scott',
+    'Balun',
+    2023 - 1971,
+    'dreamer',
+    ['RB','Darren','Poppy']
+];
+for(let i=0;i<scottArray.length;i++){
+    console.log(scottArray[i]);
+};
+
+for(let i=0; i<100;i++){
+    if (i == 90) break
+}*/
+
+/*for(let exercise = 4; exercise >= 1; exercise--){
+    console.log(`-----------------------Exercise #${exercise}-----------------------`)
+    for(let lesson = 5; lesson >= 1; lesson--){
+        console.log(`   Lesson #${lesson}`);
+    }
+}
+let x = 5;
+while(x !=0){
+    console.log("Scott wuz here");
+    x--;
+}*/
+
+let die = Math.trunc(Math.random()*6)+1;
+console.log("Keep rolling this die until you roll a six");
+while(die !== 6){
+    console.log(`You rolled a ${die}`);
+    die = Math.trunc(Math.random()*6)+1;
+    if(die===6) console.log('you rolled a 6. Game over, bruh');
+}
