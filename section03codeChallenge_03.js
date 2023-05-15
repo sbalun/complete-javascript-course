@@ -14,7 +14,7 @@ Your tasks:
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall
  */
 
-let mark = {
+const mark = {
     fullName: "Mark Miller",
     mass: 78,
     height: 1.69,
@@ -24,7 +24,7 @@ let mark = {
     }
 };
 
-let john = {
+const john = {
     fullName: "John Smith",
     mass: 92,
     height: 1.95,
@@ -34,7 +34,7 @@ let john = {
     }
 };
 
-let markBmi = mark.calcBmi();
-let johnBmi = john.calcBmi();
-console.log(`${mark.fullName}'s BMI (${mark.bmi}) is ${(markBmi > johnBmi) ? "higher" : "lower"} than ${john.fullName}'s BMI (${john.bmi})`)
+mark.calcBmi();
+john.calcBmi();
+console.log(`${mark.fullName}'s BMI (${mark.bmi}) is ${(mark.bmi > john.bmi) ? "higher" : "lower"} than ${john.fullName}'s BMI (${john.bmi})`)
 
